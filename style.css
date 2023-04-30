@@ -85,8 +85,16 @@ ul {
 }
 
 @media (max-width: 767px) {
-   .homePage .container {
+   .homePage header {
       background-color: #000;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      padding: 0 15px;
+      align-items: center;
+      justify-content: space-between;
+      left: 0;
+      z-index: 1000;
    }
    .homePage header .register a {
       display: none;
