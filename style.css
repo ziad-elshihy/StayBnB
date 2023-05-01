@@ -110,10 +110,11 @@ ul {
       padding: 20px;
       transition: 0.3s;
       opacity: 0;
-      z-index: -1;
    }
 }
-
+.showmenu {
+   opacity: 1 !important;
+}
 .homePage header ul li a {
    font-size: 13px;
    color: white;

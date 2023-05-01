@@ -1,0 +1,569 @@
+/* Start Global Rules */
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'poppins', sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+
+/* End Global Rules */
+
+/* -----------------Start Home Page------------------- */
+.homePage {
+   height: 70px;
+   box-shadow: rgba(177, 177, 184, 0.2) 0px 7px 29px 0px;
+}
+.homePage header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+}
+.homePage header img {
+   width: 140px;
+   cursor: pointer;
+}
+
+.homePage header ul {
+   display: flex;
+   gap: 40px;
+}
+
+@media (max-width: 767px) {
+   .homePage header {
+      background-color: white;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      padding: 0 15px;
+      align-items: center;
+      justify-content: space-between;
+      left: 0;
+      z-index: 999;
+   }
+   .homePage header .register a {
+      display: none;
+   }
+   .homePage header ul {
+      position: fixed;
+      right: -800px;
+      top: 70px;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      transition: 0.3s;
+   }
+}
+.showmenu {
+   right: 0 !important;
+}
+.homePage header ul li a {
+   font-size: 13px;
+   color: black;
+}
+
+.homePage header ul li .active {
+   position: relative;
+}
+
+.homePage header ul li .active::before {
+   position: absolute;
+   content: "";
+   background-color: #ff252b;
+   width: 25px;
+   height: 2px;
+   border-radius: 2px;
+   bottom: -9px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.homePage header .register a {
+   padding: 8px 20px;
+   color: white;
+   font-size: 14px;
+   border-radius: 20px;
+   background-color: #ff252b;
+}
+
+.homePage header .register i {
+   font-size: 22px;
+   text-align: center;
+   cursor: pointer;
+   display: none;
+}
+@media (max-width: 767px) {
+   .homePage header .register i {
+      display: block;
+   }
+}
+@media (min-width: 768px) {
+   .fa-bars {
+      display: none;
+      
+   }
+}
+/* -------------------End Home Page------------------- */
+/* -------------------Start Options------------------- */
+.options {
+   padding: 30px 0;
+}
+.options > h5 {
+   width: fit-content;
+   padding: 0px 0 10px 80px;
+}
+.options .container{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.options .container1 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+@media (max-width: 767px) {
+   .options .container1 {
+      flex-direction: column;
+   }
+}
+.options .container .rooms {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 70%;
+
+}
+.options .container .rooms h1 {
+   font-weight: 700;
+   color: #333;
+   padding: 0 0 30px;
+}
+@media (max-width: 767px) {
+   .options .container .rooms h1 {
+      font-size: 18px;
+   }
+}
+.options .container .rooms .room {
+   padding: 25px 0;
+   border-top: 1px solid #ddd;
+   display: flex;
+   gap: 20px;
+
+}
+@media (max-width: 767px) {
+   .options .container .rooms .room {
+      flex-direction: column;
+      justify-content: center;
+   }
+}
+.options .container .rooms .room .image {
+   flex-basis: 40%;
+}
+.options .container .rooms .room .image img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.options .container .rooms .room .content {
+   line-height: 1.6;
+   flex-basis: 58%;
+}
+.options .container .rooms .room .content h6 {
+   color: #777;
+}
+.options .room .content .icon , .stars {
+   color: #ff252b;
+}
+.options .room .content .icon .fa-solid , .stars .fa-solid {
+   color: #ff252b;
+}
+.options .room .content .price {
+   text-align: right;
+}
+@media (max-width: 767px) {
+   .options .room .content .price {
+      margin-top: 10px;
+   }
+}
+.options .room .content .price p {
+   font-weight: 600;
+}
+.options .room .content .price p span {
+   font-weight: normal;
+   font-size: small;
+   color: #777;
+}
+.options .filters {
+   flex-basis: 25%;
+   padding: 20px;
+   border: 1px solid #979595;
+   height: fit-content;
+}
+.options .filters h2 {
+   padding-bottom: 20px;
+}
+.options .filters .filter {
+   padding-bottom: 20px;
+   line-height: 1.8;
+}
+.options .filters .filter h3 {
+   padding-bottom: 15px;
+}
+.options .filters .filter .box {
+   display: flex;
+   justify-content: space-between;
+}
+.options .filters .filter .check label ,.filter .box span{
+   padding-left: 10px;
+   font-size: 13px;
+   color: #777;
+}
+.more {
+   text-align: right;
+   padding: 5px 0 10px;
+   cursor: pointer;
+}
+/* -------------------End Options------------------- */
+/* -------------------Start Navigate------------------- */
+.navigate {
+   padding: 10px 0 0;
+}
+.navigate .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.navigate .container img {
+   width: 15px;
+   margin: 10px 20px;
+}
+.navigate .container .right {
+   transform: rotate(180deg);
+}
+.navigate .container span {
+   background-color: #ddd;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   margin: 10px 8px;
+   text-align: center;
+}
+@media (max-width: 767px) {
+   .navigate .container span {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 8px;
+   }
+}
+.navigate .container .current {
+   background-color: #333;
+   color: white;
+}
+/* -------------------End Navigate------------------- */
+/* -------------------Start About------------------- */
+.about {
+   text-align: center;
+   padding-top: 50px;
+}
+.about .icon i {
+   padding: 10px;
+   color: #777;
+   margin-bottom: 10px;
+   transition: 0.3s;
+}
+
+.about .icon i:hover {
+   color: #ff5361;
+}
+
+.about .user {
+   border-top: 1px solid #ddd;
+   padding: 15px;
+}
+
+.about .user span {
+   font-size: 18px;
+   font-weight: 500;
+   color: #ff5361;
+}
+/* -------------------End About------------------- */
+/* -------------------Start landing------------------- */
+.landing {
+   padding: 50px 0;
+}
+.landing h1 {
+   margin-bottom: 15px;
+}
+.landing .rev {
+   font-size: 12px;
+   margin-bottom: 15px;
+}
+.landing .rev:not(:first-child) {
+   color: #777;
+}
+.landing .rev span {
+   margin-right: 15px;
+}
+.landing .images {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+@media (max-width: 767px) {
+   .landing .images {
+      flex-direction: column;
+   }
+}
+.landing .images .image1 {
+   flex-basis: 50%;
+}
+.landing .images .image1 img {
+   width: 100%;
+   border-radius: 10px;
+}
+.landing .images .image2 {
+   flex-basis: 50%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.landing .images .image2 div {
+   flex-basis: 50%;
+}  
+.landing .images .image2 img {
+   width: 100%;
+   border-radius: 10px;
+}
+.landing .images .image2 .pad {
+   padding-right: 10px;
+}
+.landing h2 {
+   margin: 15px 0 5px;
+}
+@media (max-width: 767px) {
+   .landing h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+   }
+   .landing h3 {
+      text-align: left;
+   }
+}
+.landing h2 span {
+   color: #ff252b;
+   font-weight: 600
+}
+.landing .info {
+   font-size: 11px;
+   font-weight: 600;
+   color: #777;
+}
+.landing .info span {
+   margin-right: 10px;
+}
+.landing h3 {
+   text-align: right;
+   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+   .landing h3 {
+      margin-top: 15px;
+      text-align: left;
+   }
+}
+/* -------------------End landing------------------- */
+hr {
+   width: 70%;
+   border-top: 1px solid #ddd ;
+}
+/* -------------------Start Check-Form------------------- */
+.check {
+   padding: 20px 0;
+}
+.check .container .form {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+   align-items: center;
+   border-radius: 8px;
+   justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+   .check .container .form {
+      flex-direction: column;
+      justify-content: center;
+   }
+}
+.check .container .input {
+   padding: 20px;
+}
+.check .container .input label {
+   display: block;
+}
+.check .container .input label {
+   margin-bottom: 7px;
+   font-weight: 600
+}
+@media (max-width: 767px) {
+   .check .container .input label {
+      text-align: center;
+   }
+}
+.check .container .input input{
+   border: 0;
+   background: transparent;
+   outline: none;
+}
+@media (max-width: 767px) {
+   .check .container .input input{
+      text-align: center;
+   }
+}
+
+.check .container .input1 input[type="submit"] {
+   background-color: #ff252b;
+   padding: 18px;
+   width: 300px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 8px;
+   font-size: 18px;
+   color: white;
+}
+@media (max-width: 767px) {
+   .check .container .input1 input[type="submit"] {
+      width: 250px;
+   }
+}
+.check .check-info {
+   padding: 50px 0;
+}
+.check .check-info .info {
+   gap: 15px;
+   margin-bottom: 20px;
+   display: flex;
+}
+.check .check-info .info i {
+   color: #ff252b;
+}
+.check .check-info .info div h3{
+   margin-bottom: 5px;
+}
+.check .check-info .info div h6{
+   margin-bottom: 5px;
+   color: #777;
+}
+.check .map {
+   padding: 40px 0;
+}
+.check .map h3 {
+   padding-bottom: 20px;
+   font-size: 26px;
+}
+.check .map h3 span {
+   color: #ff252b;
+   font-weight: 800;
+}
+.check .map iframe {
+   width: 100%;
+}
+.check .host {
+   padding: 50px 0 10px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+@media (max-width: 767px) {
+   .check .host div{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+}
+.check .host img {
+   border-radius: 50%;
+   width: 100px;
+}
+.check .host h3 {
+   margin-bottom: 10px;
+}
+.check .host h3 span {
+   color: #ff252b;
+   font-weight: 800;
+   font-size: 17px;
+}
+.check .host span {
+   margin-right: 15px;
+   font-size: 14px;
+   font-weight: 600;
+}
+.check button {
+   display: block;
+   outline: none;
+   border: 1px solid #ff252b;
+   background-color: transparent;
+   color: #ff252b;
+   margin-left: 130px;
+   border-radius: 5px;
+   padding: 10px 30px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.check button:hover {
+   background-color: #ff252b;
+   color: white;
+}
+/* -------------------End Check-Form------------------- */
