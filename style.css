@@ -101,7 +101,7 @@ ul {
    }
    .homePage header ul {
       position: fixed;
-      right: 0;
+      right: -800px;
       top: 70px;
       flex-direction: column;
       width: 100%;
@@ -109,11 +109,10 @@ ul {
       background-color: #000;
       padding: 20px;
       transition: 0.3s;
-      opacity: 0;
    }
 }
 .showmenu {
-   opacity: 1 !important;
+   right: 0 !important;
 }
 .homePage header ul li a {
    font-size: 13px;
