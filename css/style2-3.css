@@ -13,6 +13,7 @@ html {
 
 body {
    font-family: 'poppins', sans-serif;
+   transition: 0.3s;
 }
 
 a {
@@ -24,36 +25,6 @@ ul {
    margin: 0;
    padding: 0;
 }
-
-.container {
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-
-/* Small */
-@media (min-width: 768px) {
-   .container {
-      width: 750px;
-   }
-}
-
-/* Medium */
-@media (min-width: 992px) {
-   .container {
-      width: 970px;
-   }
-}
-
-/* Large */
-@media (min-width: 1200px) {
-   .container {
-      width: 1170px;
-   }
-}
-
 /* End Global Rules */
 
 /* -----------------Start Home Page------------------- */
@@ -88,6 +59,10 @@ ul {
       justify-content: space-between;
       left: 0;
       z-index: 999;
+      transition: 0.3s;
+   }
+   .headerDar {
+      background-color: black !important;
    }
    .homePage header .register a {
       display: none;
@@ -103,13 +78,20 @@ ul {
       padding: 20px;
       transition: 0.3s;
    }
+   .ulDark {
+   background-color: black !important;
+   }
 }
-.showmenu {
+
+.showMenu {
    right: 0 !important;
 }
 .homePage header ul li a {
    font-size: 13px;
    color: black;
+}
+.aDar {
+   color: white !important;
 }
 
 .homePage header ul li .active {
@@ -126,6 +108,19 @@ ul {
    bottom: -9px;
    left: 50%;
    transform: translateX(-50%);
+}
+.homePage header .register {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.homePage header .register img {
+   width: 30px;
+   text-align: center;
+   background-color: #ddd;
+   border-radius: 50%;
+   padding: 5px;
 }
 
 .homePage header .register a {
@@ -169,8 +164,8 @@ ul {
 }
 .options .container1 {
    display: flex;
-   flex-wrap: wrap;
    justify-content: space-between;
+   gap: 40px;
 }
 @media (max-width: 767px) {
    .options .container1 {
@@ -181,12 +176,15 @@ ul {
    display: flex;
    flex-direction: column;
    flex-basis: 70%;
-
 }
 .options .container .rooms h1 {
    font-weight: 700;
-   color: #333;
+   color: black;
    padding: 0 0 30px;
+   transition: 0.3s;
+}
+.h1Dark {
+   color: white !important;
 }
 @media (max-width: 767px) {
    .options .container .rooms h1 {
@@ -262,6 +260,8 @@ ul {
 .options .filters .filter .box {
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   text-align: center;
 }
 .options .filters .filter .check label ,.filter .box span{
    padding-left: 10px;
@@ -298,6 +298,7 @@ ul {
    line-height: 40px;
    margin: 10px 8px;
    text-align: center;
+   color: black;
 }
 @media (max-width: 767px) {
    .navigate .container span {
@@ -432,6 +433,7 @@ hr {
    padding: 20px 0;
 }
 .check .container .form {
+   border: 2px solid white;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    display: flex;
    flex-wrap: wrap;
@@ -465,6 +467,10 @@ hr {
    border: 0;
    background: transparent;
    outline: none;
+   transition: 0.3s;
+}
+.inputDar {
+   color: white !important;
 }
 @media (max-width: 767px) {
    .check .container .input input{
@@ -498,6 +504,7 @@ hr {
 }
 .check .check-info .info i {
    color: #ff252b;
+   padding-top: 5px;
 }
 .check .check-info .info div h3{
    margin-bottom: 5px;
@@ -536,6 +543,7 @@ hr {
 .check .host img {
    border-radius: 50%;
    width: 100px;
+   border: 4px solid #91070b;
 }
 .check .host h3 {
    margin-bottom: 10px;
@@ -567,3 +575,8 @@ hr {
    color: white;
 }
 /* -------------------End Check-Form------------------- */
+.darkMode {
+   background-color: #000106;
+   color: white;
+   transition: 0.5s;
+}

@@ -8,7 +8,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style2-3.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/style2-3.css">
    <title>BnB</title>
 </head>
 
@@ -16,15 +18,16 @@
    <!-------- Start Home Page -------->
    <section class="homePage">
       <div class="container">
-         <header>
+         <header id="headerDark">
             <a href="./index.html"><img src="./images/logo-red.png"></a>
             <ul id="dropUl">
-               <li><a href="./index.html" class="active">Popular Places</a></li>
-               <li><a href="./index2.html">Travel Outside</a></li>
-               <li><a href="./index2.html">Online Packages</a></li>
+               <li><a href="./index.html" class="active" id="aDark4">Popular Places</a></li>
+               <li><a href="./index2.html" id="aDark5">Travel Outside</a></li>
+               <li><a href="./index2.html" id="aDark6">Online Packages</a></li>
             </ul>
             <div class="register">
                <i class="fa-solid fa-bars" id="bars" onclick="on()"></i>
+               <div class="imgs" ><img src="./images/moon.png" id="icon"></div>
                <div>
                   <a href="#">Register Now</a>
                </div>
@@ -36,7 +39,7 @@
    <!-------- Start landing -------->
    <section class="landing">
       <div class="container">
-         <h1>Wenge House</h1>
+         <h1 class="fs-3 fw-bold">Wenge House</h1>
          <div class="rev">
             <span class="icon stars">
                <i class="fa-solid fa-star"></i>
@@ -67,13 +70,13 @@
                </div>
             </div>
          </div>
-         <h2>Entire rental unit hosted by <span>Ziad</span></h2>
+         <h2 class="fs-3 fw-bold">Entire rental unit hosted by <span>Ziad</span></h2>
          <div class="info">
             <span>2 Guests</span>
             <span>2 Beds</span>
             <span>1 Bathroom</span>
          </div>
-         <h3>100$ / Day</h3>
+         <h3 class="fw-bolder">100$ / Day</h3>
          <hr>
       </div>
    </section>
@@ -84,53 +87,53 @@
          <div class="form">
             <div class="input">
                <label>Check-in</label>
-               <input type="text" placeholder="Add Date">
+               <input type="text" placeholder="Add Date" id="inputDark1">
             </div>
             <div class="input">
                <label>Check-out</label>
-               <input type="text" placeholder="Add Date">
+               <input type="text" placeholder="Add Date" id="inputDark2">
             </div>
             <div class="input guest">
                <label>Guests</label>
-               <input type="text" placeholder="2 Guests">
+               <input type="text" placeholder="2 Guests" id="inputDark3">
             </div>
             <div class="input1">
-               <input type="submit" value="Check Availability">
+               <input type="submit" value="Check Availability" >
             </div>
          </div>
          <div class="check-info">
             <div class="info">
                <i class="fa-solid fa-house-chimney"></i>
                <div>
-                  <h3>Entire Home</h3>
-                  <h6>You will have the entire flat for you.</h6>
+                  <h3 class="fs-5 fw-bold m-0">Entire Home</h3>
+                  <h6 class="fs-6 fw-bold">You will have the entire flat for you.</h6>
                </div>
             </div>
             <div class="info">
                <i class="fa-solid fa-paintbrush"></i>
                <div>
-                  <h3>Enhanced Clean</h3>
-                  <h6>This host has committed to staybnb's cleaning process.</h6>
+                  <h3 class="fs-5 fw-bold m-0">Enhanced Clean</h3>
+                  <h6 class="fs-6 fw-bold">This host has committed to staybnb's cleaning process.</h6>
                </div>
             </div>
             <div class="info">
                <i class="fa-solid fa-location-dot"></i>
                <div>
-                  <h3>Great Location</h3>
-                  <h6>90% of recent guests gave the location a 5 star rating.</h6>
+                  <h3 class="fs-5 fw-bold m-0">Great Location</h3>
+                  <h6 class="fs-6 fw-bold">90% of recent guests gave the location a 5 star rating.</h6>
                </div>
             </div>
             <div class="info">
                <i class="fa-solid fa-heart"></i>
                <div>
-                  <h3>Great Check-in Experience</h3>
-                  <h6>100% of recent guests gave the check-in process a 5 star rating.</h6>
+                  <h3 class="fs-5 fw-bold m-0">Great Check-in Experience</h3>
+                  <h6 class="fs-6 fw-bold">100% of recent guests gave the check-in process a 5 star rating.</h6>
                </div>
             </div>
          </div>
          <hr>
          <div class="map">
-            <h3>Location On <span>Map</span></h3>
+            <h3 class="fw-bold fs-3">Location On <span>Map</span></h3>
             <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.14245968247!2d-122.43759999999999!3d37.75769999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1682956157142!5m2!1sen!2seg"
                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -140,7 +143,7 @@
          <div class="host">
             <img src="./images/host.png" alt="">
             <div>
-               <h3>Hosted By <span>Ziad</span></h3>
+               <h3 class="fs-4 fw-bold">Hosted By <span>Ziad</span></h3>
                <span class="icon stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -148,9 +151,9 @@
                   <i class="fa-solid fa-star-half-stroke"></i>
                   <i class="fa-regular fa-star"></i>
                </span>
-               <span>245 Reviews</span>
-               <span>Response Rate 100%</span>
-               <span>Response Time: 60 min</span>
+               <span class="fw-bolder">245 Reviews</span>
+               <span class="fw-bolder">Response Rate 100%</span>
+               <span class="fw-bolder">Response Time: 60 min</span>
             </div>
          </div>
          <button>Contact Host</button>
@@ -173,12 +176,7 @@
    </section>
    <!-------- End About -------->
    <!-------- Start Scripts -------->
-   <script>
-      let ul = document.getElementById("dropUl")
-      function on() {
-         ul.classList.toggle("showmenu")
-      }
-   </script>
+   <script src="./js/main3.js"></script>
    <!-------- End Scripts -------->
 </body>
 

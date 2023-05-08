@@ -8,7 +8,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style2-3.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/style2-3.css">
    <title>BnB</title>
 </head>
 
@@ -16,15 +18,16 @@
    <!-------- Start Home Page -------->
    <section class="homePage">
       <div class="container">
-         <header>
+         <header id="headerDark">
             <a href="./index.html"><img src="./images/logo-red.png"></a>
             <ul id="dropUl">
-               <li><a href="./index.html" class="active">Popular Places</a></li>
-               <li><a href="./index2.html">Travel Outside</a></li>
-               <li><a href="./index2.html">Online Packages</a></li>
+               <li><a href="./index.html" class="active" id="aDark1">Popular Places</a></li>
+               <li><a href="./index2.html" id="aDark2">Travel Outside</a></li>
+               <li><a href="./index2.html" id="aDark3">Online Packages</a></li>
             </ul>
             <div class="register">
                <i class="fa-solid fa-bars" id="bars" onclick="on()"></i>
+               <div class="imgs" ><img src="./images/moon.png" id="icon"></div>
                <div>
                   <a href="#">Register Now</a>
                </div>
@@ -40,15 +43,15 @@
          <h5>200+ Options</h5>
          <div class="container1">
             <div class="rooms">
-               <h1>Recommended Places In San Francisco</h1>
+               <h1 id="h1Dar" class="m-0 fs-3">Recommended Places In San Francisco</h1>
                <div class="room">
                   <div class="image">
                      <a href="./index3.html"><img src="./images/house-5.png"></a>
                   </div>
                   <div class="content">
-                     <h6>Private Villa in San Francisco</h6>
-                     <h3>Deluxe Queen Room With Street View</h3>
-                     <h6>1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
+                     <h6 class="fs-6">Private Villa in San Francisco</h6>
+                     <h3 class="fs-4 fw-bold">Deluxe Queen Room With Street View</h3>
+                     <h6 class="fs-6">1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
                      <div class="icon">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -67,9 +70,9 @@
                      <a href="./index3.html"><img src="./images/house-2.png"></a>
                   </div>                  
                   <div class="content">
-                     <h6>Private Villa in San Francisco</h6>
-                     <h3>Deluxe Queen Room With Street View</h3>
-                     <h6>1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
+                     <h6 class="fs-6">Private Villa in San Francisco</h6>
+                     <h3 class="fs-4 fw-bold">Deluxe Queen Room With Street View</h3>
+                     <h6 class="fs-6">1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
                      <div class="icon">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -87,9 +90,9 @@
                   <div class="image">
                      <a href="./index3.html"><img src="./images/house-3.png"></a>
                   </div>                  <div class="content">
-                     <h6>Private Villa in San Francisco</h6>
-                     <h3>Deluxe Queen Room With Street View</h3>
-                     <h6>1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
+                     <h6 class="fs-6">Private Villa in San Francisco</h6>
+                     <h3 class="fs-4 fw-bold">Deluxe Queen Room With Street View</h3>
+                     <h6 class="fs-6">1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
                      <div class="icon">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -107,9 +110,9 @@
                   <div class="image">
                      <a href="./index3.html"><img src="./images/house-4.png"></a>
                   </div>                  <div class="content">
-                     <h6>Private Villa in San Francisco</h6>
-                     <h3>Deluxe Queen Room With Street View</h3>
-                     <h6>1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
+                     <h6 class="fs-6">Private Villa in San Francisco</h6>
+                     <h3 class="fs-4 fw-bold">Deluxe Queen Room With Street View</h3>
+                     <h6 class="fs-6">1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
                      <div class="icon">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -127,9 +130,9 @@
                   <div class="image">
                      <a href="./index3.html"><img src="./images/house-5.png"></a>
                   </div>                  <div class="content">
-                     <h6>Private Villa in San Francisco</h6>
-                     <h3>Deluxe Queen Room With Street View</h3>
-                     <h6>1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
+                     <h6 class="fs-6">Private Villa in San Francisco</h6>
+                     <h3 class="fs-4 fw-bold">Deluxe Queen Room With Street View</h3>
+                     <h6 class="fs-6">1 Bedroom / 1 Bathroom / Wifi / Kitchen</h6>
                      <div class="icon">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -145,9 +148,9 @@
                </div>
             </div>
             <div class="filters">
-               <h2>Select Filters</h2>
+               <h2 class="m-0 fs-3 fw-bold">Select Filters</h2>
                <div class="filter">
-                  <h3>Property Type</h3>
+                  <h3 class="m-0 fs-5 fw-bold">Property Type</h3>
                   <div class="box">
                      <div class="check">
                         <input type="checkbox" id="house">
@@ -185,7 +188,7 @@
                   </div>
                </div>
                <div class="filter">
-                  <h3>Amenities</h3>
+                  <h3 class="m-0 fs-5 fw-bold">Amenities</h3>
                   <div class="box">
                      <div class="check">
                         <input type="checkbox" id="airconditioning">
@@ -258,12 +261,7 @@
    </section>
       <!-------- End About -------->
    <!-------- Start Scripts -------->
-   <script>
-      let ul = document.getElementById("dropUl")
-      function on() {
-         ul.classList.toggle("showmenu")
-      }
-   </script>
+   <script src="./js/main2.js"></script>
       <!-------- End Scripts -------->
 </body>
 
