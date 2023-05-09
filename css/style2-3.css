@@ -188,7 +188,7 @@ ul {
 }
 @media (max-width: 767px) {
    .options .container .rooms h1 {
-      font-size: 18px;
+      font-size: 18px !important;
    }
 }
 .options .container .rooms .room {
@@ -359,7 +359,6 @@ ul {
 }
 .landing .images {
    display: flex;
-   justify-content: space-between;
    gap: 10px;
 }
 @media (max-width: 767px) {
@@ -385,9 +384,7 @@ ul {
 .landing .images .image2 img {
    width: 100%;
    border-radius: 10px;
-}
-.landing .images .image2 .pad {
-   padding-right: 10px;
+   padding: 2px;
 }
 .landing h2 {
    margin: 15px 0 5px;

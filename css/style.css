@@ -242,7 +242,9 @@ ul {
    outline: none;
    background: transparent;
 }
-
+.homePage .content .search-bar form input::placeholder {
+   font-size: 12px;
+}
 @media (max-width: 767px) {
    .homePage .content .search-bar form input {
       margin: 10px 0 15px;
@@ -348,6 +350,7 @@ ul {
    background-position: center;
    border-radius: 10px;
    color: white;
+   width: calc(100% - 24px);
 }
 
 .cta .container div {
