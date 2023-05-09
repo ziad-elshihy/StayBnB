@@ -5,7 +5,7 @@ function on() {
 
 
 let icon = document.getElementById("icon");
-icon.onclick = function() {
+icon.onclick = function () {
    document.body.classList.toggle("darkMode");
    document.getElementById("headerDark").classList.toggle("headerDar");
    document.getElementById("h1Dar").classList.toggle("h1Dark");
@@ -13,7 +13,7 @@ icon.onclick = function() {
    document.getElementById("aDark2").classList.toggle("aDar");
    document.getElementById("aDark3").classList.toggle("aDar");
    ul.classList.toggle("ulDark")
-   if(document.body.classList.contains("darkMode")) {
+   if (document.body.classList.contains("darkMode")) {
       icon.src = "images/sun.png";
    } else {
       icon.src = "images/moon.png";
@@ -21,50 +21,95 @@ icon.onclick = function() {
 }
 
 // array of items 
-
 const items = [{
    id: 0,
-   title: "Bag 1",
-   price: 15,
-   img: "img/main7.jpg",
-   amount: 1
+   title: "Private Villa in San Francisco",
+   title1: "Deluxe Queen Room With Street View",
+   title2: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+   title3: "2 Guest",
+   title4: "$100 / ",
+   title5: "day",
+   img: "./images/house-5.png",
 },
 {
    id: 1,
-   title: "Bag 2",
-   price: 25,
-   img: "img/main8.jpg",
-   amount: 1
+   title: "Private Villa in San Francisco",
+   title1: "Deluxe Queen Room With Street View",
+   title2: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+   title3: "2 Guest",
+   title4: "$100 / ",
+   title5: "day",
+   img: "./images/house-1.png",
 },
 {
    id: 2,
-   title: "Bag 3",
-   price: 10,
-   img: "img/main9.jpg",
-   amount: 1
+   title: "Private Villa in San Francisco",
+   title1: "Deluxe Queen Room With Street View",
+   title2: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+   title3: "2 Guest",
+   title4: "$100 / ",
+   title5: "day",
+   img: "./images/house-2.png",
 },
 {
    id: 3,
-   title: "Bag 4",
-   price: 30,
-   img: "img/main10.jpg",
-   amount: 1
+   title: "Private Villa in San Francisco",
+   title1: "Deluxe Queen Room With Street View",
+   title2: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+   title3: "2 Guest",
+   title4: "$100 / ",
+   title5: "day",
+   img: "./images/house-3.png",
 },
 {
    id: 4,
-   title: "Bag 5",
-   price: 100,
-   img: "img/main11.jpg",
-   amount: 1
+   title: "Private Villa in San Francisco",
+   title1: "Deluxe Queen Room With Street View",
+   title2: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+   title3: "2 Guest",
+   title4: "$100 / ",
+   title5: "day",
+   img: "./images/house-4.png",
 }]
 
-let parentBoxs = document.querySelector('.parent-boxs')
+let rooms = document.querySelector('.rooms')
 let currentItem = ""
 
-function rednerItems() {
+function renderItems() {
    items.forEach(item => {
-      currentItem += ``
-      parentBoxs.innerHTML = currentItem
+      currentItem += `
+      <div class="room">
+      <div class="image">
+         <a href="./index3.html"><img src="${item.img}"></a>
+      </div>
+      <div class="content">
+         <h6 class="fs-6">${item.title}</h6>
+         <h3 class="fs-5 fw-bold">${item.title1}</h3>
+         <h6 class="fs-6">${item.title2}</h6>
+         <div class="icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+         </div>
+         <div class="price">
+            <h6>${item.title3}</h6>
+            <p>${item.title4}<span>${item.title5}</p>
+         </div>
+      </div>
+   </div>`
+      rooms.innerHTML = currentItem
    })
 }
-rednerItems()
+renderItems()
+
+
+
+// const newestDate = new Date("2023-05-09");
+
+// const itemsWithDate = items.map(item => {
+//    return { ...item, date: new Date() };
+// });
+
+// const itemsFiltered = itemsWithDate.filter(item => new Date(item.date) <= newestDate);

@@ -177,18 +177,17 @@ ul {
    flex-direction: column;
    flex-basis: 70%;
 }
-.options .container .rooms h1 {
+.options .container #h1Dar {
    font-weight: 700;
    color: black;
-   padding: 0 0 30px;
    transition: 0.3s;
 }
 .h1Dark {
    color: white !important;
 }
 @media (max-width: 767px) {
-   .options .container .rooms h1 {
-      font-size: 18px !important;
+   .options .container #h1Dar {
+      font-size: 17px !important;
    }
 }
 .options .container .rooms .room {
