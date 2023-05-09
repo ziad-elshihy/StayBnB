@@ -263,14 +263,14 @@ ul {
    text-align: center;
 }
 .options .filters .filter .check label ,.filter .box span{
-   padding-left: 10px;
-   font-size: 13px;
+   padding-left: 5px;
    color: #777;
 }
 .more {
    text-align: right;
    padding: 5px 0 10px;
    cursor: pointer;
+   text-decoration:underline;
 }
 /* -------------------End Options------------------- */
 /* -------------------Start Navigate------------------- */

@@ -35,7 +35,7 @@ function showTime() {
    if (seconds < 10) {
       seconds = `0${seconds}`
    }
-   let clock = `${hours}:${minutes}:${seconds}`;
+   let clock = `<span class="text-white bg-dark p-1">Time:</span> ${hours}:${minutes}:${seconds}`;
    document.getElementById("time").innerHTML = clock;
    setTimeout(showTime , 1000);
 }

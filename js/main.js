@@ -46,7 +46,7 @@ function formValidate() {
       return false;
    }
    errors3.innerHTML = "";
-   if (textArea.length < 20) {
+   if (textArea.length < 10) {
       text = "Please Enter Valid Message";
       errors4.innerHTML = text;
       return false;

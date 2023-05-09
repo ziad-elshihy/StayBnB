@@ -30,6 +30,7 @@ const items = [{
    title4: "$100 / ",
    title5: "day",
    img: "./images/house-5.png",
+   date: new Date('2022-02-01')
 },
 {
    id: 1,
@@ -40,6 +41,7 @@ const items = [{
    title4: "$100 / ",
    title5: "day",
    img: "./images/house-1.png",
+   date: new Date('2019-10-01')
 },
 {
    id: 2,
@@ -50,6 +52,7 @@ const items = [{
    title4: "$100 / ",
    title5: "day",
    img: "./images/house-2.png",
+   date: new Date('2021-05-01')
 },
 {
    id: 3,
@@ -60,6 +63,7 @@ const items = [{
    title4: "$100 / ",
    title5: "day",
    img: "./images/house-3.png",
+   date: new Date('2020-01-01')
 },
 {
    id: 4,
@@ -70,10 +74,11 @@ const items = [{
    title4: "$100 / ",
    title5: "day",
    img: "./images/house-4.png",
+   date: new Date('2023-05-09')
 }]
-let rooms = document.querySelector('.rooms')
+const filteredItems = items.sort((a, b) => new Date(b.date) - new Date(a.date));
+let rooms = document.querySelector(".rooms")
 let currentItem = ""
-
 function renderItems() {
    items.forEach(item => {
       currentItem += `
@@ -103,12 +108,5 @@ function renderItems() {
 }
 renderItems()
 
+const sortedDates = items.filter(date => date).sort((a, b) => b - a);
 
-
-// const newestDate = new Date("2023-05-09");
-
-// const itemsWithDate = items.map(item => {
-//    return { ...item, date: new Date() };
-// });
-
-// const itemsFiltered = itemsWithDate.filter(item => new Date(item.date) <= newestDate);
