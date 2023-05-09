@@ -421,8 +421,8 @@ ul {
    z-index: -1;
    cursor: pointer;
    filter: brightness(50%);
-}
 
+}
 .traveler .images .image-box p {
    color: white;
    position: absolute;

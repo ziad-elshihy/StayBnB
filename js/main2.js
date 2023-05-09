@@ -71,7 +71,6 @@ const items = [{
    title5: "day",
    img: "./images/house-4.png",
 }]
-
 let rooms = document.querySelector('.rooms')
 let currentItem = ""
 
@@ -86,7 +85,7 @@ function renderItems() {
          <h6 class="fs-6">${item.title}</h6>
          <h3 class="fs-5 fw-bold">${item.title1}</h3>
          <h6 class="fs-6">${item.title2}</h6>
-         <div class="icon">
+         <div class="icon d-inline-block animate__animated animate__infinite animate__fadeIn animate__slower">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>

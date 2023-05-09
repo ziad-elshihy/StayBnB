@@ -34,7 +34,6 @@ function formValidate() {
       return false;
    }
    errors1.innerHTML = "";
-
    if (email === "" || email.indexOf("@") == -1) {
       text = "Please Enter Valid Email";
       errors2.innerHTML = text;
@@ -57,22 +56,4 @@ function formValidate() {
    }
 }
 
-function showTime() {
-   let date = new Date();
-   let hours = date.getHours();
-   let minutes = date.getMinutes();
-   let seconds = date.getSeconds();
-   if (hours > 12) {
-      hours = hours - 12
-   }
-   if (minutes < 10) {
-      minutes = `0${minutes}`
-   }
-   if (seconds < 10) {
-      seconds = `0${seconds}`
-   }
-   let clock = `${hours}:${minutes}:${seconds}`;
-   document.getElementById("time").innerHTML = clock;
-   setTimeout(showTime , 1000);
-}
 

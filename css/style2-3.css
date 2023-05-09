@@ -512,13 +512,14 @@ hr {
 .check .map {
    padding: 40px 0;
 }
-.check .map h3 {
-   padding-bottom: 20px;
-   font-size: 26px;
+#time {
+   color: #ff252b;
+
 }
 .check .map h3 span {
    color: #ff252b;
    font-weight: 800;
+   display: inline-block;
 }
 .check .map iframe {
    width: 100%;
@@ -546,8 +547,6 @@ hr {
 }
 .check .host h3 span {
    color: #ff252b;
-   font-weight: 800;
-   font-size: 17px;
 }
 .check .host span {
    margin-right: 15px;
