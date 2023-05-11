@@ -49,5 +49,3 @@ function formValidate() {
       alert("Message sent successfully");
    }
 }
-
-
