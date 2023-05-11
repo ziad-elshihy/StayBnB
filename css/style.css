@@ -199,7 +199,9 @@ ul {
    justify-content: space-between;
    position: relative;
 }
-
+.homePage .content .search-bar form > div {
+   padding-right: 10px;
+}
 @media (min-width: 768px) {
    .homePage .content .search-bar form {
       align-items: center;
@@ -221,8 +223,9 @@ ul {
       padding-bottom: 15px;
    }
 
-   .homePage .content .search-bar form div {
+   .homePage .content .search-bar form > div {
       position: relative;
+      padding: 5px;
    }
 
    .homePage .content .search-bar form div::before {
@@ -242,6 +245,7 @@ ul {
 
 .homePage .content .search-bar form input {
    display: block;
+   width: 150px;
    border: none;
    outline: none;
    background: transparent;
