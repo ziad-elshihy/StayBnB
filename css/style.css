@@ -484,8 +484,9 @@ ul {
    width: 50%;
    text-align: center;
    padding: 50px;
-   border: 2px solid white;
-   border-radius: 7px;
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
+   border-radius: 4px;
    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
 
