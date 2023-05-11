@@ -280,13 +280,13 @@ ul {
 
 .options .filters {
    flex-basis: 25%;
-   padding: 20px;
+   padding: 33px;
    border: 1px solid #979595;
    height: fit-content;
 }
 
 .options .filters h2 {
-   padding-bottom: 20px;
+   padding-bottom: 40px;
 }
 
 .options .filters .filter {
