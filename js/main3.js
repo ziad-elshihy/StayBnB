@@ -2,8 +2,6 @@ let ul = document.getElementById("dropUl");
 function on() {
    ul.classList.toggle("showMenu");
 }
-
-
 let icon = document.getElementById("icon");
 icon.onclick = function() {
    document.body.classList.toggle("darkMode");

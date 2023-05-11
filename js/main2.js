@@ -2,8 +2,6 @@ let ul = document.getElementById("dropUl");
 function on() {
    ul.classList.toggle("showMenu");
 }
-
-
 let icon = document.getElementById("icon");
 icon.onclick = function () {
    document.body.classList.toggle("darkMode");
@@ -19,7 +17,6 @@ icon.onclick = function () {
       icon.src = "images/moon.png";
    }
 }
-
 // array of items 
 const items = [{
    id: 0,
@@ -76,11 +73,11 @@ const items = [{
    img: "./images/house-4.png",
    date: new Date('2023-05-09')
 }]
-const filteredItems = items.sort((a, b) => new Date(b.date) - new Date(a.date));
+const filteredItems = items.filter(item => item.date).sort((a, b) => b.date - a.date);
 let rooms = document.querySelector(".rooms")
 let currentItem = ""
 function renderItems() {
-   items.forEach(item => {
+   filteredItems.forEach(item => {
       currentItem += `
       <div class="room">
       <div class="image">
@@ -107,6 +104,3 @@ function renderItems() {
    })
 }
 renderItems()
-
-const sortedDates = items.filter(date => date).sort((a, b) => b - a);
-

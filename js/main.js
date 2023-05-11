@@ -2,8 +2,6 @@ let ul = document.getElementById("dropUl");
 function on() {
    ul.classList.toggle("showMenu");
 }
-
-
 let icon = document.getElementById("icon");
 icon.onclick = function() {
    document.getElementById("search").classList.toggle("searchDark");
@@ -14,10 +12,7 @@ icon.onclick = function() {
       icon.src = "images/moon.png";
    }
 }
-
-
 function formValidate() {
-
    let userName = document.getElementById("userName").value;
    let email = document.getElementById("email").value;
    let phone = document.getElementById("phone").value;
@@ -27,7 +22,6 @@ function formValidate() {
    let errors3 = document.getElementById("errors3");
    let errors4 = document.getElementById("errors4");
    let text = '';
-
    if (userName === "" || userName.length < 5) {
       text = "Please Enter Valid Username";
       errors1.innerHTML = text;

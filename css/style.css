@@ -111,10 +111,10 @@ ul {
 .homePage header ul li .active::before {
    position: absolute;
    content: "";
-   background-color: white;
+   background-color: #ff252b;
    width: 25px;
    height: 2px;
-   border-radius: 2px;
+   border-radius: 50%;
    bottom: -9px;
    left: 50%;
    transform: translateX(-50%);
@@ -126,11 +126,14 @@ ul {
    gap: 10px;
 }
 
-.homePage header .register img {
+.homePage header .register .imgs {
    width: 30px;
    text-align: center;
    background-color: white;
    border-radius: 50%;
+}
+.homePage header .register img {
+   width: 100%;
    padding: 5px;
 }
 
@@ -260,7 +263,7 @@ ul {
 
 .homePage .content .search-bar form button {
    border-radius: 50%;
-   background-color: #ff5361;
+   background-color: #ff252b;
    width: 45px;
    height: 45px;
    border: none;
@@ -392,7 +395,7 @@ ul {
 }
 
 .cta .container a {
-   background-color: #ff5361;
+   background-color: #ff252b;
    color: white;
    padding: 12px 30px;
    border-radius: 8px;
@@ -437,7 +440,7 @@ ul {
 }
 
 .traveler .start-btn {
-   background-color: #ff5361;
+   background-color: #ff252b;
    color: #fff;
    border-radius: 50px;
    padding: 15px;
@@ -507,11 +510,11 @@ ul {
    height: 50px;
    border-radius: 5px;
    color: #fff;
-   background: #ff5361;
+   background: #ff252b;
    line-height: 1rem;
    font-size: 1rem;
    cursor: pointer;
-   border: 1px solid #ff5361;
+   border: 1px solid #ff252b;
    margin-top: 25px;
    transition: 0.3s;
 }
@@ -563,6 +566,6 @@ footer .user {
 footer .user span {
    font-size: 18px;
    font-weight: 500;
-   color: #ff5361;
+   color: #ff252b;
 }
 /* -------------------End Footer------------------- */
