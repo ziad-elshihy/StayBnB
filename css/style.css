@@ -520,27 +520,18 @@ ul {
 }
 
 .contact .container button {
-   width: 30%;
-   height: 50px;
+   outline: none;
+   padding: 10px 50px;
    border-radius: 5px;
    color: #fff;
    background: #ff252b;
-   line-height: 1rem;
    font-size: 1rem;
-   cursor: pointer;
    border: 1px solid #ff252b;
    margin-top: 25px;
    transition: 0.3s;
 }
-
-@media (max-width: 767px) {
-   .contact .container button {
-      width: 50%;
-   }
-}
-
 .contact .container button:hover {
-   color: #ff5361;
+   color: #ff252b;
    background: #fff;
 }
 
@@ -588,7 +579,6 @@ footer .user {
 
 footer .user span {
    font-size: 18px;
-   font-weight: 500;
    color: #ff252b;
 }
 
