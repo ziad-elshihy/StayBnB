@@ -51,9 +51,7 @@ function sendMail() {
       return false;
    }
    else {
-      alert("Your message has been sent successfully!!");
-   }
-   emailjs.send(serviceID, templateID, info)
+      emailjs.send(serviceID, templateID, info)
       .then(res => {
          document.getElementById("userName").value = "";
          document.getElementById("email").value = "";
@@ -61,4 +59,6 @@ function sendMail() {
          document.getElementById("message").value = "";
       })
       .catch(err => console.log(err));
+      alert("Your message has been sent successfully!!");
+   }
 }
