@@ -74,12 +74,14 @@ ul {
    }
 
    .homePage header ul {
+      border: 1px solid rgba(128, 128, 128, 0.4);
       position: fixed;
-      /* right: -970px; */
-      right: 0;
-      top: -195px;
+      right: -970px;
+      top: 70px;
       flex-direction: column;
-      width: 100%;
+      justify-content: space-evenly;
+      width: 50%;
+      height: 65%;
       text-align: center;
       background-color: white;
       padding: 20px;
@@ -91,9 +93,15 @@ ul {
       background-color: black !important;
    }
 }
-
+@media (max-width: 767px) {
+   .homePage header ul {
+      width: 60%;
+      height: 50%;
+      justify-content: space-evenly;
+   }
+}
 .showMenu {
-   top: 71px !important;
+   right: 0 !important;
 }
 
 .homePage header ul li a {

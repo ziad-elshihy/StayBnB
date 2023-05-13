@@ -83,12 +83,14 @@ ul {
    }
 
    .homePage header ul {
+      border-top: 1px solid rgba(128, 128, 128, 0.4);
       position: fixed;
-      /* right: -970px; */
-      right: 0;
-      top: -195px;
+      right: -970px;
+      top: 70px;
       flex-direction: column;
-      width: 100%;
+      justify-content: space-evenly;
+      width: 50%;
+      height: 65%;
       text-align: center;
       background-color: #000;
       padding: 20px;
@@ -96,9 +98,15 @@ ul {
       z-index: -2;
    }
 }
-
+@media (max-width: 767px) {
+   .homePage header ul {
+      width: 60%;
+      height: 50%;
+      justify-content: space-evenly;
+   }
+}
 .showMenu {
-   top: 71px !important;
+   right: 0 !important;
 }
 
 .homePage header ul li a {
@@ -225,7 +233,7 @@ ul {
 
    .homePage .content .search-bar form > div {
       position: relative;
-      padding: 5px;
+      padding: 5px 0;
    }
 
    .homePage .content .search-bar form div::before {
