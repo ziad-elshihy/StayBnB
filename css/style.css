@@ -65,7 +65,7 @@ ul {
    gap: 40px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
    .homePage header {
       background-color: #000;
       position: fixed;
@@ -84,19 +84,21 @@ ul {
 
    .homePage header ul {
       position: fixed;
-      right: -800px;
-      top: 70px;
+      /* right: -970px; */
+      right: 0;
+      top: -195px;
       flex-direction: column;
       width: 100%;
       text-align: center;
       background-color: #000;
       padding: 20px;
       transition: 0.3s;
+      z-index: -2;
    }
 }
 
 .showMenu {
-   right: 0 !important;
+   top: 71px !important;
 }
 
 .homePage header ul li a {
@@ -123,19 +125,13 @@ ul {
 .homePage header .register {
    display: flex;
    align-items: center;
-   gap: 10px;
-}
-
-.homePage header .register .imgs {
-   width: 30px;
-   text-align: center;
-   background-color: white;
-   border-radius: 35%;
+   gap: 5px;
 }
 
 .homePage header .register img {
-   width: 100%;
-   padding: 5px;
+   width: 30px;
+   filter: invert(1);
+   padding: 2px;
 }
 
 .homePage header .register a {
@@ -154,10 +150,11 @@ ul {
    display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
    .homePage header .register i {
       display: block;
       color: #ffffff;
+      order: 1;
    }
 }
 

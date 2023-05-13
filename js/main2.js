@@ -13,8 +13,10 @@ icon.onclick = function () {
    ul.classList.toggle("ulDark")
    if (document.body.classList.contains("darkMode")) {
       icon.src = "images/sun.png";
+      icon.style.filter = "invert(1)"
    } else {
       icon.src = "images/moon.png";
+      icon.style.filter = "invert(0)"
    }
 }
 // array of items 
