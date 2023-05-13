@@ -50,8 +50,8 @@ function sendMail() {
       errors4.innerHTML = text;
       return false;
    }
-   else {
-      emailjs.send(serviceID, templateID, info)
+   errors4.innerHTML = "";
+   emailjs.send(serviceID, templateID, info)
       .then(res => {
          document.getElementById("userName").value = "";
          document.getElementById("email").value = "";
@@ -59,6 +59,5 @@ function sendMail() {
          document.getElementById("message").value = "";
       })
       .catch(err => console.log(err));
-      alert("Your message has been sent successfully!!");
-   }
+   alert("Your message has been sent successfully!!");
 }
