@@ -130,7 +130,7 @@ ul {
    width: 30px;
    text-align: center;
    background-color: white;
-   border-radius: 50%;
+   border-radius: 35%;
 }
 
 .homePage header .register img {
@@ -148,7 +148,7 @@ ul {
 
 
 .homePage header .register i {
-   font-size: 22px;
+   font-size: 30px;
    text-align: center;
    cursor: pointer;
    display: none;
@@ -218,6 +218,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+   .homePage .content .search-bar {
+      padding: 10px 15px;
+   }
    .homePage .content .search-bar form {
       flex-direction: column;
       padding-bottom: 15px;
@@ -477,17 +480,16 @@ ul {
 /* -------------------End About------------------- */
 /* -------------------Start Contact Us------------------- */
 .contact {
-   padding: 40px 0 100px;
+   padding: 40px 15px 100px;
 }
 
 .contact .container {
    width: 50%;
    text-align: center;
    padding: 50px;
-   border-top: 2px solid white;
-   border-bottom: 2px solid white;
+   border: 2px solid white;
    border-radius: 4px;
-   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+   box-shadow: inset 0px 7px 29px 0px rgba(140, 140, 145, 0.2);
 }
 
 @media (max-width: 767px) {
