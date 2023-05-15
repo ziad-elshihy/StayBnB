@@ -7,9 +7,13 @@ icon.onclick = function () {
    document.getElementById("search").classList.toggle("searchDark");
    document.body.classList.toggle("darkMode");
    if (document.body.classList.contains("darkMode")) {
-      icon.src = "images/sun.png";
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      icon.style.color="yellow"
    } else {
-      icon.src = "images/moon.png";
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');   
+      icon.style.color="white"
    }
 }
 

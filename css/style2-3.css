@@ -131,13 +131,7 @@ ul {
 
 .homePage header .register {
    display: flex;
-   align-items: center;
-   gap: 5px;
-}
-
-.homePage header .register img {
-   width: 30px;
-   padding: 2px;
+   gap: 15px;
 }
 
 .homePage header .register a {
@@ -152,20 +146,17 @@ ul {
    font-size: 25px;
    text-align: center;
    cursor: pointer;
-   display: none;
 }
 
 @media (max-width: 991px) {
    .homePage header .register i {
       display: block;
-      order: 1;
    }
 }
 
 @media (min-width: 768px) {
    .fa-bars {
       display: none;
-
    }
 }
 

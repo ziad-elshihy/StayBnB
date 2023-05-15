@@ -13,12 +13,14 @@ icon.onclick = function() {
    document.getElementById("inputDark1").classList.toggle("inputDar");
    document.getElementById("inputDark2").classList.toggle("inputDar");
    document.getElementById("inputDark3").classList.toggle("inputDar");
-   if(document.body.classList.contains("darkMode")) {
-      icon.src = "images/sun.png";
-      icon.style.filter = "invert(1)"
+   if (document.body.classList.contains("darkMode")) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      icon.style.color="yellow"
    } else {
-      icon.src = "images/moon.png";
-      icon.style.filter = "invert(0)"
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');   
+      icon.style.color="black"
    }
 }
 function showTime() {

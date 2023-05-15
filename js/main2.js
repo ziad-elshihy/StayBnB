@@ -12,11 +12,13 @@ icon.onclick = function () {
    document.getElementById("aDark3").classList.toggle("aDar");
    ul.classList.toggle("ulDark")
    if (document.body.classList.contains("darkMode")) {
-      icon.src = "images/sun.png";
-      icon.style.filter = "invert(1)"
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      icon.style.color="yellow"
    } else {
-      icon.src = "images/moon.png";
-      icon.style.filter = "invert(0)"
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');   
+      icon.style.color="black"
    }
 }
 // array of items 
