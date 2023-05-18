@@ -131,7 +131,6 @@ ul {
 
 .homePage header .register {
    display: flex;
-   gap: 15px;
 }
 
 .homePage header .register a {
@@ -147,7 +146,9 @@ ul {
    text-align: center;
    cursor: pointer;
 }
-
+.fa-moon, .fa-sun {
+   padding-right: 15px;
+}
 @media (max-width: 991px) {
    .homePage header .register i {
       display: block;
