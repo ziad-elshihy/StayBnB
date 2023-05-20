@@ -653,23 +653,26 @@ hr {
 }
 
 .check button {
-   display: block;
    outline: none;
    border: 1px solid #ff252b;
    background-color: transparent;
-   color: #ff252b;
    margin-left: 130px;
    border-radius: 5px;
-   padding: 10px 30px;
    cursor: pointer;
    transition: 0.3s;
 }
-
+.check button a {
+   display: block;
+   color: #ff252b;
+   transition: 0.3s;
+   padding: 10px 30px;
+}
 .check button:hover {
    background-color: #ff252b;
+}
+.check button:hover a {
    color: white;
 }
-
 /* -------------------End Check-Form------------------- */
 .darkMode {
    background-color: #000106;
