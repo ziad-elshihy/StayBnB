@@ -17,6 +17,12 @@ icon.onclick = function () {
    }
 }
 
+
+// email.js
+let errors1 = document.getElementById("errors1");
+let errors2 = document.getElementById("errors2");
+let errors3 = document.getElementById("errors3");
+let errors4 = document.getElementById("errors4");
 function sendMail() {
    const info = {
       userName: document.getElementById("userName").value,
@@ -24,10 +30,6 @@ function sendMail() {
       phone: document.getElementById("phone").value,
       message: document.getElementById("message").value,
    };
-   let errors1 = document.getElementById("errors1");
-   let errors2 = document.getElementById("errors2");
-   let errors3 = document.getElementById("errors3");
-   let errors4 = document.getElementById("errors4");
    let text = '';
    const serviceID = "service_jzc67tq";
    const templateID = "template_4stpdhw";

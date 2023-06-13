@@ -555,6 +555,7 @@ ul {
    border: 1px solid #ff252b;
    margin-top: 25px;
    transition: 0.3s;
+   cursor: pointer;
 }
 .contact .container button:hover {
    color: #ff252b;
