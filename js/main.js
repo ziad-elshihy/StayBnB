@@ -45,7 +45,7 @@ function sendMail() {
       return false;
    }
    errors2.innerHTML = "";
-   if (isNaN(info.phone) || info.phone.length <= 11) {
+   if (isNaN(info.phone) && info.phone.length <= 11) {
       text = "Please Enter Valid Phone";
       errors3.innerHTML = text;
       return false;
